@@ -1,25 +1,29 @@
 {
-  "name": "simple-react-full-stack",
+  "name": "chuck-norris-joke-sender",
   "version": "1.0.0",
-  "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
+  "description": "Web-app for sending a joke about Chuck Norris to variable amount of emails.",
   "main": "src/server/index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "npm run build && node src/server/index.js",
+    "start": "npm run build && nodemon src/server/index.js --exec babel-node",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
-    "server": "nodemon src/server/index.js",
+    "server": "nodemon src/server/index.js --exec babel-node",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Sandeep Raveesh",
-  "license": "ISC",
+  "author": "Boris Barak",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.3.1",
     "express": "^4.16.3",
+    "nodemailer": "^6.2.1",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "reactstrap": "^8.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
     "@babel/core": "^7.0.0",
+    "@babel/node": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",

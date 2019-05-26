@@ -1,4 +1,16 @@
-# simple-react-full-stack
+# Chuck Norris joke sender
+
+I have created this stack from simple-react-full-stack project
+
+See the instructions how to install and run the project below.
+
+The structure of the code should be clear. I have used Nodemon library for for emails sending with gmail service.
+I have created and configured a special gmail account. You can see the sendMail.js file for more details about it.
+
+I have also created "common" folder for the code that could be shared by the both client and server sides of the app.  
+
+
+# The original documentation from simple-react-full-stack project
 
 [![Build Status](https://travis-ci.org/crsandeep/simple-react-full-stack.svg?branch=master)](https://travis-ci.org/crsandeep/simple-react-full-stack)
 [![Greenkeeper badge](https://badges.greenkeeper.io/crsandeep/simple-react-full-stack.svg)](https://greenkeeper.io/)
